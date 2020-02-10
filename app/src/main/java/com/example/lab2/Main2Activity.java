@@ -18,6 +18,8 @@ public class Main2Activity extends AppCompatActivity {
         TextView textView2 = (TextView) findViewById(R.id.textView2);
         Intent intent = getIntent();
         String str = intent.getStringExtra("message");
+        int helper = Integer.parseInt(str);
+        double helper2 = helper * 0.77;
         textView2.setText("Hello " + str);
 
     }
